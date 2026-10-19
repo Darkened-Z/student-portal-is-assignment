@@ -31,7 +31,7 @@ node server.js
 | Username | Password  | Role    |
 |----------|-----------|---------|
 | admin    | admin123  | admin   |
-| tayyaba  | pass@123  | student |
+| ali      | pass@123  | student |
 | zeeshan  | zeeshan99 | student |
 
 ---

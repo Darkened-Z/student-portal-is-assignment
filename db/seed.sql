@@ -3,7 +3,7 @@
 
 INSERT OR IGNORE INTO users (username, password, email, role) VALUES
     ('admin',   'admin123',    'admin@portal.edu',   'admin'),
-    ('tayyaba', 'pass@123',    'tayyaba@portal.edu', 'student'),
+    ('ali',     'pass@123',    'ali@portal.edu',     'student'),
     ('zeeshan', 'zeeshan99',   'zeeshan@portal.edu', 'student'),
     ('sara',    'sara2024',    'sara@portal.edu',    'student');
 

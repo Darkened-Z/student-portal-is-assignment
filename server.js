@@ -1,4 +1,4 @@
-const express = require('express');
+﻿const express = require('express');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const path = require('path');
@@ -21,7 +21,7 @@ app.use(session({
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// ─── routes ────────────────────────────────────────────────────────────
+// â”€â”€â”€ routes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 app.use('/vulnerable', require('./routes/vulnerable'));
 app.use('/secure',     require('./routes/secure'));
 
@@ -31,15 +31,15 @@ app.get('/', (req, res) => {
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Student Portal — IS Assignment 2</title>
+  <title>Student Portal â€” IS Assignment 2</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <header style="background:#1a1a2e;color:#fff;padding:20px 40px;display:flex;align-items:center;gap:20px;">
-  <span style="font-size:2rem;">🎓</span>
+  <span style="font-size:2rem;">ðŸŽ“</span>
   <div>
     <h1 style="margin:0">Student Portal</h1>
-    <p style="margin:0;opacity:.7">Information Security Assignment 2 — Part 2</p>
+    <p style="margin:0;opacity:.7">Information Security Assignment 2 â€” Part 2</p>
   </div>
 </header>
 <main style="max-width:700px;margin:40px auto;padding:0 20px;">
@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
   Choose a version to explore:</p>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;">
     <div class="card" style="border-top:4px solid #e74c3c;">
-      <h2 style="color:#e74c3c">⚠️ Vulnerable Version</h2>
+      <h2 style="color:#e74c3c">âš ï¸ Vulnerable Version</h2>
       <p>All attacks work end-to-end. Try the payloads shown on each page.</p>
       <ul>
         <li>Reflected XSS (search)</li>
@@ -58,10 +58,10 @@ app.get('/', (req, res) => {
         <li>SQLi Intermediate (search)</li>
         <li>SQLi Advanced (UNION)</li>
       </ul>
-      <a href="/vulnerable/login" class="btn btn-danger">Enter Vulnerable Version →</a>
+      <a href="/vulnerable/login" class="btn btn-danger">Enter Vulnerable Version â†’</a>
     </div>
     <div class="card" style="border-top:4px solid #27ae60;">
-      <h2 style="color:#27ae60">✅ Secure Version</h2>
+      <h2 style="color:#27ae60">âœ… Secure Version</h2>
       <p>All attacks are blocked. Each page shows the specific fix applied.</p>
       <ul>
         <li>Output encoding (escapeHtml)</li>
@@ -70,7 +70,7 @@ app.get('/', (req, res) => {
         <li>Parameterized queries</li>
         <li>Input validation</li>
       </ul>
-      <a href="/secure/login" class="btn btn-safe">Enter Secure Version →</a>
+      <a href="/secure/login" class="btn btn-safe">Enter Secure Version â†’</a>
     </div>
   </div>
   <div class="card" style="margin-top:24px;background:#f8f9fa;">
@@ -78,7 +78,7 @@ app.get('/', (req, res) => {
     <table style="width:100%">
       <tr><th>Username</th><th>Password</th><th>Role</th></tr>
       <tr><td>admin</td><td>admin123</td><td>admin</td></tr>
-      <tr><td>tayyaba</td><td>pass@123</td><td>student</td></tr>
+      <tr><td>ali</td><td>pass@123</td><td>student</td></tr>
       <tr><td>zeeshan</td><td>zeeshan99</td><td>student</td></tr>
     </table>
   </div>
@@ -94,3 +94,4 @@ app.listen(PORT, () => {
     console.log(`[server] Vulnerable: http://localhost:${PORT}/vulnerable/login`);
     console.log(`[server]    Secure: http://localhost:${PORT}/secure/login`);
 });
+
