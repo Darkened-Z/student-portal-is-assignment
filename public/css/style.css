@@ -1,0 +1,124 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: #fff;
+}
+
+.vuln-header  { background: #7b1f1f; }
+.secure-header { background: #1a3a2a; }
+
+.brand { font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+
+nav { display: flex; gap: 16px; }
+nav a { color: #fff; text-decoration: none; opacity: .85; font-size: .9rem; }
+nav a:hover { opacity: 1; text-decoration: underline; }
+
+main { flex: 1; max-width: 900px; margin: 32px auto; padding: 0 20px; width: 100%; }
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    margin-bottom: 24px;
+}
+
+h2 { font-size: 1.4rem; margin-bottom: 16px; }
+h3 { font-size: 1.1rem; margin: 16px 0 10px; color: #444; }
+
+label { display: block; font-size: .85rem; color: #555; margin: 10px 0 4px; }
+
+input[type="text"], input[type="email"], input[type="password"], input:not([type]),
+textarea, select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: .95rem;
+    font-family: inherit;
+}
+
+textarea { min-height: 80px; resize: vertical; }
+
+button, .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: .95rem;
+    cursor: pointer;
+    text-decoration: none;
+    background: #3498db;
+    color: #fff;
+    font-family: inherit;
+}
+button:hover, .btn:hover { opacity: .9; }
+
+.btn-danger, .btn-danger[type="submit"] { background: #e74c3c; }
+.btn-safe { background: #27ae60; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: .9rem; }
+th { background: #f8f9fa; padding: 10px 12px; text-align: left; border-bottom: 2px solid #dee2e6; }
+td { padding: 9px 12px; border-bottom: 1px solid #eee; }
+tr:last-child td { border-bottom: none; }
+
+.comment {
+    padding: 10px 14px;
+    background: #f8f9fa;
+    border-left: 3px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 0 5px 5px 0;
+}
+.comment strong { color: #2c3e50; }
+.comment small { display: block; color: #999; font-size: .8rem; margin-top: 4px; }
+
+.error { color: #e74c3c; background: #fdf2f2; padding: 8px 12px; border-radius: 5px; margin-bottom: 12px; }
+.hint  { color: #7f8c8d; font-size: .85rem; margin-top: 10px; background: #fff8e7; padding: 8px 12px; border-radius: 5px; border-left: 3px solid #f39c12; }
+.fix   { color: #27ae60; font-size: .85rem; margin-top: 10px; background: #eafaf1; padding: 8px 12px; border-radius: 5px; border-left: 3px solid #27ae60; }
+
+.badge {
+    font-size: .7rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.badge-vuln { background: #e74c3c; color: #fff; }
+.badge-safe { background: #27ae60; color: #fff; }
+
+footer {
+    text-align: center;
+    padding: 16px;
+    color: #999;
+    font-size: .8rem;
+    border-top: 1px solid #dee2e6;
+    background: #fff;
+    margin-top: auto;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: .9em;
+    color: #c0392b;
+}
+
+hr { border: none; border-top: 1px solid #eee; margin: 20px 0; }
