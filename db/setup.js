@@ -18,5 +18,4 @@ function initDb() {
     console.log('[db] Initialised at', DB_PATH);
 }
 
-// built by student of fast cfd
 module.exports = { getDb, initDb };
