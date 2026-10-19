@@ -373,6 +373,6 @@ router.post('/profile/update-email', auth, verifyCsrf, (req, res) => {
     res.redirect('/secure/profile');
 });
 
-// built by Tayyaba Riaz — FA24-BST-080
+// built by Zeeshan Khan — 23F-0553
 
 module.exports = router;

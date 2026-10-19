@@ -57,7 +57,7 @@ ${navbar({ user: req.session[mode==='vulnerable'?'user':'secureUser'], mode, act
 <div class="page-wrap">
 ${body}
 </div>
-<footer>FAST NUCES Student Portal — Information Security Assignment 2 — Tayyaba Riaz FA24-BST-080</footer>
+<footer>FAST NUCES Student Portal — Information Security Assignment 2 — Zeeshan Khan 23F-0553</footer>
 </body>
 </html>`;
 }

@@ -2,7 +2,7 @@
 
 A full-stack web application demonstrating common web vulnerabilities and their fixes.
 
-**Student:** Tayyaba Riaz | FA24-BST-080 | COMSATS University Islamabad  
+**Student:** Zeeshan Khan | 23F-0553 | FAST NUCES  
 **Course:** Information Security (Practical)
 
 ---

@@ -83,7 +83,7 @@ app.get('/', (req, res) => {
     </table>
   </div>
 </main>
-<footer>Student: Tayyaba Riaz &nbsp;|&nbsp; Reg: FA24-BST-080 &nbsp;|&nbsp; COMSATS University Islamabad</footer>
+<footer>Student: Zeeshan Khan &nbsp;|&nbsp; Reg: 23F-0553 &nbsp;|&nbsp; FAST NUCES</footer>
 </body>
 </html>`);
 });
