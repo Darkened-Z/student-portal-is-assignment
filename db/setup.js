@@ -2,7 +2,9 @@ const Database = require('better-sqlite3');
 const fs = require('fs');
 const path = require('path');
 
-const DB_PATH = path.join(__dirname, 'portal.db');
+const DB_PATH = process.env.VERCEL
+    ? '/tmp/portal.db'
+    : path.join(__dirname, 'portal.db');
 
 function getDb() {
     return new Database(DB_PATH);
